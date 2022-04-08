@@ -37,3 +37,36 @@ boxFizz.append(i);
 
 // aggiungo la classe dentro alla const che mi interessa da far vedere sull'html
 container.append(boxFizz);
+
+
+
+// dichiarare che ogni multiplo di 3 e 5 si applica il cambiamento mettendo la classe interessata
+if ((i % boxThree === 0) && (i % boxFive === 0)) {
+  console.log('Buzzfizz')
+  boxFizz.classList.add('boxfizz-threefive')
+  boxFizz.textContent = 'buzzfizz'
+}
+
+// dichiarare che ogni multiplo di 3 si applica il cambiamento mettendo la classe interessata
+else if (i % boxThree === 0) {
+  console.log('Buzz')
+  boxFizz.classList.add('boxfizz-three');
+  boxFizz.textContent = 'fizz';
+}
+
+// dichiarare che ogni multiplo di 5 si applica il cambiamento mettendo la classe interessata
+else if (i % boxFive === 0) {
+  console.log('Fizz')
+  boxFizz.classList.add('boxfizz-five')
+  boxFizz.textContent = 'buzz'
+}
+
+// dichiarare che al boxfinale si applica il cambiamento mettendo la classe interessata
+else if (i % boxFinal === 0) {
+  boxFizz.classList.add('boxfizz-final')
+  boxFizz.textContent = ''
+}
+
+else {console.log(i);}
+  
+};

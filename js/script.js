@@ -25,3 +25,15 @@ const boxFinal = 101
 
 //specifica di calcolo
 for (let i = 1; i <= limitCounter; i++){
+
+// creo l'elemento da aggiungere
+const boxFizz = document.createElement ('div');
+
+// inserire la classe che mi serve da far vedere
+boxFizz.className = 'boxfizz';
+
+// aggiungo i contenuti, tanti qunato è il limite
+boxFizz.append(i);
+
+// aggiungo la classe dentro alla const che mi interessa da far vedere sull'html
+container.append(boxFizz);

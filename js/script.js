@@ -18,10 +18,10 @@ const container = document.querySelector ('.container');
 console.log(container);
 
 // dichiarare dei valori o altro che a noi interessa affinchè possano servirci per poterli poi visualizzare
-const limitCounter = 101
-const boxThree = 3 
-const boxFive = 5
-const boxFinal = 101
+const limitCounter = 101;
+const boxThree = 3 ;
+const boxFive = 5;
+const boxFinal = 101;
 
 //specifica di calcolo
 for (let i = 1; i <= limitCounter; i++){
@@ -40,9 +40,9 @@ container.append(boxFizz);
 
 // dichiarare che ogni multiplo di 3 e 5 si applica il cambiamento mettendo la classe interessata
 if ((i % boxThree === 0) && (i % boxFive === 0)) {
-  console.log('Buzzfizz')
-  boxFizz.classList.add('boxfizz-threefive')
-  boxFizz.textContent = 'buzzfizz'
+  console.log('Buzzfizz');
+  boxFizz.classList.add('boxfizz-threefive');
+  boxFizz.textContent = 'buzzfizz';
 }
 
 // dichiarare che ogni multiplo di 3 si applica il cambiamento mettendo la classe interessata
@@ -56,13 +56,13 @@ else if (i % boxThree === 0) {
 else if (i % boxFive === 0) {
   console.log('Fizz')
   boxFizz.classList.add('boxfizz-five')
-  boxFizz.textContent = 'buzz'
+  boxFizz.textContent = 'buzz';
 }
 
 // dichiarare che al boxfinale si applica il cambiamento mettendo la classe interessata
 else if (i % boxFinal === 0) {
   boxFizz.classList.add('boxfizz-final')
-  boxFizz.textContent = ''
+  boxFizz.textContent = '';
 }
 
 else {console.log(i);}
